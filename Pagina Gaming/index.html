@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>World Of Gamers*ELITE</title>
+        <link rel="icon" href="img/logo pestaña.png">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+
+    </head>
+
+    <body>
+
+       <div id="container">
+            <!-- menu de inicio -->
+            <nav class="header-nav">
+                <div class="box1">
+                    <img class="logo-inicio" src="img/Logo Inicio.png" alt="logo World Of Gamers ÉLITE">
+                </div>
+                <!-- nombre de la pagina barra de inicio-->
+                <div class="box2">
+                     <h1 class="barra-titulo">World Of Gamers*ELITE</h1>
+                </div>
+                <!--Menu de iniciar sesion-->
+                <div class="box3">
+                    <div class="login toggle">
+                         <a href="#" class="inicio-registro inicio">Iniciar Sesion</a>
+                    </div>
+                    <div class="login toggleR">
+                         <a href="#" class="inicio-registro registro">Registrarse</a>
+                    </div>
+       </div>
+
+                <!-- formulario inicio -->
+
+    <div class="contenedor-iniciar-sesion">
+                    <!--<div class="toggle">
+                         <span> crear cuenta</span>
+                    </div>-->
+                 <div class="formulario">
+                         <h2>Iniciar Sesion</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Usuario" required>
+                            <input type="password" placeholder="Contraseña" required>
+                            <input type="submit" value="Iniciar Sesion">
+                        </form>
+                        <div class="reset-password">
+                            <a href="#">Olvide mi Contraseña?</a>
+                       </div>
+                    </div>
+    </div>
+
+                <!--formulario registrarse-->
+    <div class="contenedor-iniciar-registro">
+             <!--   <div class="toggleR">
+                         <span> crear cuenta</span>
+                    </div>--> 
+
+               <div class="formularioR">
+                         <h2>Crea tu Cuenta</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Usuario" required>
+                            <input type="password" placeholder="Contraseña" required>
+                            <input type="email" placeholder="Correo Electronico" required>
+                        <!--<input type="text" placeholder="Telefono">-->
+                            <input type="submit" value="Resistrarse">
+                        </form>                   
+                    </div>
+    </div> 
+
+                <!-- efecto javascrip formulario -->
+                <script src="js/main.js"></script>
+            </nav>
+            <!--logo de perfin-->
+            <header class="contenedor-perfil">
+                <img class="logo-perfil" src="img/Logo_WOGE.png" alt="imagen no disponible">
+                 <h1 class="titulo-perfil"><span class="Gaming">Gaming*</span><br>
+
+        <span class="etiqueta-iz">[</span>
+
+        <span class="woge">WOGE</span>
+
+        <span class="etiqueta-dr">]</span>
+
+         World Of Gamers*ELITE</h1>
+            </header>
+            <!--menu de galeria, torneos, equipos-->
+            <nav class="contenedor-menu">
+                <ul class="menu">
+                    <li><a class="titulos-menu" href="#">GALERIA</a>
+
+                        <ul>
+                            <li class="opciones-menu" onclick="mostrarVideos();"><a class="menu-principal" href="#">Videos</a>
+                            </li>
+                            <li class="opciones-menu menu2"><a class="menu-principal" href="#">Imagenes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class="titulos-menu" href="#">RANKING</a>
+                        <ul>
+                            <li class="opciones-menu"><a class="menu-principal" href="#">Clanes</a>
+                            </li>
+                            <li class="opciones-menu menu2"><a class="menu-principal" href="#">Jugadores</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class="titulos-menu" href="#">TORNEOS</a>
+                        <ul>
+                            <li class="opciones-menu"><a class="menu-principal" href="#">Amistosos</a>
+                            </li>
+                            <li class="opciones-menu menu2"><a class="menu-principal" href="#">Oficiales</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a class="titulos-menu" href="#">EQUIPOS</a>
+
+                        <ul>
+                            <li class="opciones-menu opciones-equipos">
+                                 <a class="menu-principal" href="#">Equipos</a>
+                            </li>
+                            <li class="opciones-menu menu2">
+                                 <a class="menu-principal" href="#">Grupos</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- swiper de videojuegos -->
+            <section id="PlantillaVideojuegos">
+                <!-- caja de videojuegos -->
+                <div class="caja">
+                    <!--titulo de los videos de videojuegos-->
+
+
+
+                    
+<h2 class="videos-gaming">Videos Gaming*</h2>
+
+                    <!-- buscador -->
+                    <div class="caja-busqueda">
+                        <div class="header">
+                            <div class="navegacion">
+                                <input type="search" placeholder="Buscar Juegos..." id="inputBusqueda">
+                                <img class="icono-busqueda" src="img/icono buscador.png">
+                            </div>
+                        </div>
+                        <div class="search" id="search">
+                            <table class="search-table" id="searchTable">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">LEAGUE of LEGENDS</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">FREE FIRE</a>
+                                        </td>
+                                        </a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">APEX LEGENDS</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">FORTNITE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Warframe</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">COUNTER STRIKE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">DIRTYBOMB</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">GHOST RECON PHANTOMS</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">BATTLEFIELD HARDLINE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">BATTLEFIELD 4</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">PLAYERUNKNOWN'S BATTLEGROUNDS MOBILE</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">MODERN COMBAT 5</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- menu busqueda -->
+                        <div class="caja-opciones-busqueda">
+                            <ul class="menu-busqueda">
+                                <li><a class="titulos-menu-busqueda" href="#">Todos</a>
+                                </li>
+                                <li><a class="titulos-menu-busqueda" href="#">Mas Visto</a>
+                                </li>
+                                <li><a class="titulos-menu-busqueda" href="#">En Directo</a>
+                                </li>
+                                <li><a class="titulos-menu-busqueda" href="#">Populares</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- script busqueda -->
+                        <script src="js/buscador.js"></script>
+                    </div>
+
+                    <!-- Swiper -->
+
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img1.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img2.png">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img10.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img8.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img5.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img3.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img4.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img6.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img7.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgGaming">
+                                <img class="img-gaming" src="img/gaming/img11.jpg">
+                            </div>
+                            <div class="detalles">
+                                 <h3>Img Gaming<br><span>Img Gamer</span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper('.swiper-container', {
+                                effect: 'coverflow',
+                                grabCursor: true,
+                                centeredSlides: true,
+                                slidesPerView: 'auto',
+                                coverflowEffect: {
+                                    rotate: 15,
+                                    /* rotar caja */
+                                    stretch: 10,
+                                    /* espacio de caja */
+                                    depth: 115,
+                                    /* tamaño de caja de profundidar  */
+                                    modifier: 1.5,
+                                    /* profundidad */
+                                    slideShadows: true,
+                                },
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                },
+
+                            });
+                    </script>
+                </div>
+                <div>
+                     <h2 class="lol">LEAGUE  of  LEGUENDS</h2>
+                </div>
+                <!-- GALERIA DE VIDEOS -->
+                <div class="gallery">
+
+                    <div class="thumbnail">
+                         <h4>Ghost Recon Phantoms</h4> 
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+
+                         <h3>MakSteve8</h3> 
+
+
+
+
+                    </div>
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+
+                    </div>
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+                    </div>
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+                    </div>
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+                    </div>
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+                    </div>
+                    <div class="thumbnail">
+                         <h4>TITLE</h4>
+                        <a href="#">
+                            <img src="img/bkg_06.jpg" alt="" width="2000" class="cards" />
+                        </a>
+
+
+                        <div class="detalle">
+                            <p class="tag">IG__vs_TL_-_MSI_2019_S3D3P4_-_Semi_Final_1(youtube.com)</p>
+                        </div>
+                         <h3>MakSteve8</h3>
+                    </div>
+                </div>
+
+
+            </section>
+            <!-- publicidad parte lateral -->
+            <aside>
+            </aside>
+            <!-- menu de ayudas -->
+    <footer>
+        <a class="ayudas" href="#">Acerca de</a>
+        <a class="ayudas" href="#">Politica de privacidad</a>
+        <a class="ayudas" href="#">Pregunta frecuentes</a>
+        <a class="ayudas" href="#">Contactenos</a>
+
+        <a href="https://www.facebook.com/WorldOfGamersELITE">
+        <img class="paginas" src="img/logoRS/f.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/channel/UCnR11MSQwvtihibpVd8Ht_Q?view_as=subscriber">
+        <img class="paginas" src="img/logoRS/y.png" alt="YouTube">
+        </a>
+        <img class="paginas" src="img/logoRS/s.png" alt="Steam">
+        <img class="paginas" src="img/logoRS/w.png" alt="WhatsApp">
+        <img class="paginas" src="img/logoRS/d.png" alt="DISCORD">
+    
+    </footer>
+        </div>
+
+    </body>
+
+</html>
